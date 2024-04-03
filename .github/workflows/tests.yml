@@ -38,7 +38,10 @@ jobs:
 
     - name: Run E2E Smoke Test
       run: robot -d ./logs -i smoke tests
-    
+
+    - name: Run E2E All Tests
+      run: robot -d ./logs tests 
+      
     - name: Robot Reporter
       uses: joonvena/robotframework-reporter-action@v2.4
       with:
